@@ -1,0 +1,123 @@
+Page{
+  font-size: 13px;
+  overflow: auto;
+}
+
+.child-nodes {
+	position: relative;
+	display: flex;
+	flex-flow:row nowrap ;
+	justify-content: center;
+	align-items: flex-start;
+	padding-top: 1rem;
+  
+}
+.child-nodes::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 50%;
+	border-left: 1px solid #ccc;
+	width: 0;
+	height: 1rem;
+}
+
+.child-node {
+	position: relative;
+	padding-top: 15px;
+	padding-left: 5px;
+	padding-right: 5px;
+	text-align: center;
+  display: inline-block;
+}
+
+
+
+.parents-node{
+	--border: 1px solid black;	
+}
+
+.parents-main-node{
+	display: inline-block;
+	border: 1px solid #bbb;
+	color: #666;
+	border-radius:5px;
+	padding: 0.2em;
+	cursor: pointer;
+  width: 3.2em;
+  
+}
+
+.parents-main-node.boot-node{
+   background: #eeee00;
+   font-weight: bold;
+}
+
+.parents-mate-nodes{
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items:flex-start;
+}
+
+.parents-mate-node{
+	margin:0 2px;
+	cursor: pointer;
+	border: 1px solid #ddd;
+	padding: 5px;
+	font-size: 90%;
+}
+
+
+/*draw the connectors*/
+.child-node::before{
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 50%;
+	border-top: 5px solid #ccc;
+	width: 50%;
+	height: 10px;
+}
+
+.child-node::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	border-top: 5px solid #ccc;
+	width: 50%;
+	height: 10px;
+	border-left: 1px solid #ccc;
+}
+.child-node.last-child::before {
+	border-right: 1px solid #ccc;
+	border-radius: 0 5px 0 0;
+}
+.child-node.first-child::after {
+	border-radius: 5px 0 0 0;
+}
+
+.child-node.first-child::before,
+.child-node.last-child::after {
+	border:none;
+}
+
+/*orphan node*/
+.child-node.only-child::after,
+.child-node.only-child::before {
+	display: none;
+}
+.child-node.only-child {
+	padding-top: 0;
+}
+
+.parents-main-node:hover{
+	background: #c8e4f8;
+	color: #000;
+}
+.parents-mate-node:hover{
+	background: #c8e4f8;
+	color: #000;
+}
+
+

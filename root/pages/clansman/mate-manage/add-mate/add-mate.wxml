@@ -1,0 +1,56 @@
+<form bindsubmit="handleFormSubmit">
+  <view class='layout-vbox page'>
+    <scroll-view scroll-y class='grow'>
+      <view class='form-row'>
+        <label>配偶姓名：</label>
+        <input name="name" value='{{name}}' placeholder='必填，至少2个中文' type='text'></input>
+      </view>
+     <!--
+      <view class='form-row'>
+        <picker class='grow' name="mateOrder" range="{{mateOrderArray}}" mode="selector" value="{{mateOrder}}"  bindchange="handleMateOrderChange">
+          <label>　第几任：</label>
+          <text>{{mateOrderArray[mateOrder]}}</text>
+        </picker>
+      </view>
+      -->
+      <!--
+          <view class='form-row'>
+      <picker class='grow' range="{{genderArray}}" mode="selector" name="gender" value="{{gender}}" bindchange="handleGenderChange">
+        <label>配偶性别：</label>
+        <text>{{genderArray[gender]}}</text>
+      </picker>
+    </view>
+    -->
+      <view class='form-row'>
+        <picker class='grow' name="birthday" mode="date" value="{{birthday}}" start="1700-01-01" end="{{endBirthday}}"   bindchange="handleBirthDayChange">
+          <label>出生日期：</label>
+          <text wx:if="{{birthday}}">{{birthday}}</text>
+          <input  placeholder='可选' wx:else></input>
+        </picker>
+      </view>
+
+
+      <view class='form-row'>
+        <label>手机号码：</label>
+        <input name="mobile" type='number' value='{{mobile}}' placeholder='可选'></input>
+      </view>
+      <view class='form-row'>
+        <label>居住地址：</label>
+        <input name="liveWhere" value='{{liveWhere}}' type='text' placeholder='可选'></input>
+      </view>
+
+      <view class='form-row'>
+        <label>近期照片：</label>
+        <button size='mini' bindtap='handleSelectRecentPhoto'>
+          选择</button>
+
+      </view>
+      <view class='pad'  wx:if="{{recentPhotoURL}}">
+        <image style='width:100%;' mode='aspectFit'  src='{{recentPhotoURL}}'></image>
+      </view>
+    </scroll-view>
+    <view class='pad'>
+    <button class='block' type='primary' form-type="submit">确定</button>
+    </view>
+  </view>
+</form>

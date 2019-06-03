@@ -1,0 +1,23 @@
+<view>
+  <view class='h1'>
+    我家亲戚多V2.1
+  </view>
+  <view class='p'>
+    "我家亲戚多"是一款具有渐进式体验的小程序，您可以简单的把它作为亲戚称谓计算器使用，也可以进一步用它来构建您的家族树，便于您理清你们家的亲戚关系来源。您还可以再进一步把它作为亲人关怀，亲戚关系维护的随手App，比如记录亲人的近照，家庭住址，关心亲人的生日等。
+  </view>
+
+<!--
+  <view class='p'>
+    <text decode>
+      Copyright © 2019-2020 
+      All Rights Reserved. 
+    </text>
+  </view>
+-->
+    
+  <view class='pad'>
+    <button type='primary' class='block' bindtap='handleBackBtnTap'>
+      返回
+    </button>
+  </view>
+</view>

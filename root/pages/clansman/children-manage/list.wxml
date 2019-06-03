@@ -1,0 +1,28 @@
+<view class='layout-vbox page'>
+ <view class='fieldset-title pad'>
+    <text>{{name}}的子女列表</text>
+  </view>
+  <scroll-view scroll-y>
+    <view class='pad'>
+    <view wx:if="{{children==null}}">
+      加载中...
+    </view>
+    <view wx:elif="{{children.length==0}}" >
+      <text>暂无子女，请添加。</text>
+    </view>
+    <block wx:else>
+      <view catchtap='handleChildViewTap' data-id="{{item._id}}" wx:key="{{item._id}}" wx:for="{{children}}" class='layout-row pad' >
+        <image class='avator-list' src="{{item.recentPhotoURL?item.recentPhotoURL:noPhotoURL}}"></image>
+        <view>
+            <view>{{item.name}}({{item.gender?'男':'女'}})</view>
+            <view>{{item.birthday}}</view>
+        </view>
+     </view>
+     </block>
+     </view>
+  </scroll-view>
+      <view class='pad'>
+        <button class='block' catchtap='handleAddBtnTap'>添加子女</button>
+      </view>
+
+</view>  

@@ -1,0 +1,51 @@
+<form bindsubmit="handleFormSubmit">
+<view class='layout-vbox page'>
+  <scroll-view scroll-y class='grow'>
+  
+  <view class='fieldset-title'>我的基础信息</view>
+   
+    <view class='form-row'>
+      <label>我的姓名：</label>
+      <input type='text' name="name" value='{{myself.name}}' placeholder='必填，至少2个中文'></input>
+    </view>
+      <view class='form-row'>
+        <label>手机号码：</label>
+        <input name="mobile" value='{{myself.mobile}}' type='number' placeholder='可选'></input>
+      </view>
+
+
+    <view class='form-row'>
+      <picker class='grow' range="{{genderArray}}" mode="selector" name="gender" value="{{myself.gender}}" bindchange="handleGenderChange">
+        <label>我的性别：</label>
+        <text>{{genderArray[myself.gender]}}</text>
+      </picker>
+    </view>
+
+    <view class='form-row'>
+      <picker class='grow' name="birthday" mode="date" value="{{myself.birthday}}" start="1700-01-01" end="{{endBirthday}}"  bindchange="handleBirthDayChange">
+        <label>出生日期：</label>
+      
+         <text wx:if="{{myself.birthday}}">{{myself.birthday}}</text>
+          <input  placeholder='可选' wx:else></input>
+      </picker>
+    </view>
+    <view class='form-row'>
+      <label>居住地址：</label>
+      <input name="liveWhere" value='{{myself.liveWhere}}' type='text' placeholder='可选'></input>
+    </view>
+
+    <view class='form-row'>
+      <label>近期照片：</label>
+      <button size='mini' bindtap='handleSelectRecentPhoto'>选择</button>
+    </view>
+    <view class='pad' wx:if="{{myself.recentPhotoURL}}">
+      <image style='width:100%;' mode='aspectFit' name="recentPhotoURL" src='{{myself.recentPhotoURL}}'></image>
+    </view>
+  
+
+  </scroll-view>
+  <view class='pad'>
+    <button class='block' type='primary' form-type="submit">确定</button>
+  </view>
+</view>
+  </form>

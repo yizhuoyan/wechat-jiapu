@@ -1,0 +1,11 @@
+
+navigator{
+  text-decoration: none;
+}
+.setting-item{
+  padding:30rpx 15rpx;
+  border-top:1px solid #ccc;
+  background:hsl(32, 14%, 76%);
+  --color: white;
+}
+

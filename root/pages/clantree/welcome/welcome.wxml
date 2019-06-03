@@ -1,0 +1,21 @@
+<view>
+  <view class='layout-column'>
+    <image 
+    class='big-avatar' 
+    mode='scaleToFill'
+     src='{{avatar}}'></image>
+    <view>
+     <text class='pad'>{{nickName}}，欢迎您。</text>
+    </view> 
+  </view>
+  
+  <view class='pad'>
+    <button type='primary' class='block' bindtap='handleCreateMyClantreeBtnTap'>
+      开始创建我的家族树
+    </button>
+    <view class='layout-center-middle pad'>
+    <navigator url='/pages/clantree/about/about'>什么是家族树?</navigator>
+    </view>
+  </view>
+
+</view>

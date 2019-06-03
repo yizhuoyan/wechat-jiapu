@@ -1,0 +1,18 @@
+<view>
+  <view class='h1'>
+    我家亲戚多帮助
+  </view>
+    <view class='layout-center-middle pad'>
+    <navigator url='/pages/clantree/about/about'>什么是家族树?</navigator>
+    </view>
+
+  <view class='p'>
+      帮助手册维护中，目前有任何其他使用上的问题请暂时发送邮件到wojiaqinqiduo@163.com，谢谢。 
+  </view>
+    
+  <view class='pad'>
+    <button type='primary' class='block' bindtap='handleBackBtnTap'>
+      返回
+    </button>
+  </view>
+</view>

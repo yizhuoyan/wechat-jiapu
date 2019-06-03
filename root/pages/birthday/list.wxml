@@ -1,0 +1,26 @@
+<view class='layout-vbox page'>
+<scroll-view scroll-y>
+    <view wx:if="{{rows==null}}">
+      加载中...
+    </view>
+    <view wx:elif="{{rows.length==0}}">
+      <text>暂无数据。</text>
+    </view>
+    <block wx:else>
+      <view catchtap='handleRowViewTap' data-id="{{item._id}}" wx:key="{{item._id}}" wx:for="{{rows}}" class='layout-row pad'>
+        <image class='avator-list' src="{{item.recentPhotoURL?item.recentPhotoURL:noPhotoURL}}"></image>
+        <view class='grow'>
+          <view>{{item.name}}(龄:{{item.age}})</view>
+          <view>出生:{{item.birthday}}</view>
+        </view>
+        <view>
+          <text>{{item.when}}</text>
+        </view>
+      </view>
+    </block>
+</scroll-view>
+<view class='pad'>
+  <button class='block' catchtap='handleBackBtnTap'>返回</button>
+</view>
+
+</view>

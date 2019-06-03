@@ -1,0 +1,72 @@
+{
+  "pages": [
+  
+    "pages/appellation/appellation",
+    "pages/appellation/help",
+      "pages/clantree/welcome/welcome",
+    "pages/authorize/authorize",
+    "pages/clantree/my",
+    "pages/clantree/index",
+    "pages/clansman/mod/mod",
+    "pages/clansman/add-self/add-self",
+    "pages/clansman/mod-self/mod-self",
+    "pages/clansman/add-father/add-father",
+    "pages/clansman/add-mother/add-mother",
+    "pages/clansman/mod-father/mod-father",
+    "pages/clansman/mod-mother/mod-mother",
+    "pages/clansman/mate-manage/list",
+    "pages/clansman/mate-manage/add-mate/add-mate",
+    "pages/clansman/mate-manage/mod-mate/mod-mate",
+    "pages/clansman/children-manage/list",
+    "pages/clansman/children-manage/add-child/mother-add-child",
+    "pages/clansman/children-manage/add-child/father-add-child",
+    "pages/clansman/children-manage/check-child/check-child",
+    "pages/mine/index",
+    "pages/mine/about/about",
+    "pages/mine/help/help",
+    "pages/birthday/list",
+    "pages/clansman/add-self/add-self2",
+    "pages/clantree/about/about"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "我家亲戚多",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#666666",
+    "selectedColor": "#f10b2e",
+    "backgroundColor": "#fefefe",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/appellation/appellation",
+        "text": "称谓计算",
+        "iconPath": "images/icon-appellation.png",
+        "selectedIconPath": "images/icon-appellation-selected.png"
+      },
+      {
+        "pagePath": "pages/clantree/my",
+        "text": "家族树",
+        "iconPath": "images/icon-tree.png",
+        "selectedIconPath": "images/icon-tree-selected.png"
+      },
+      {
+        "pagePath": "pages/mine/index",
+        "text": "我的",
+        "iconPath": "images/icon-mine.png",
+        "selectedIconPath": "images/icon-mine-selected.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "usingComponents": {
+    "clannode": "mycomponent/clannode"
+  },
+  "cloud": true,
+  "sitemapLocation": "sitemap.json"
+}

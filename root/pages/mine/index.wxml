@@ -1,0 +1,27 @@
+<scroll-view class='layout-vbox' scroll-y style='height:100%'>
+  <view class='layout-row gap'>
+    <image class="small-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+    <view>
+      <view>
+        <text space='emsp'>{{userInfo.nickName}}</text>
+      </view>
+      <view>
+        <text space='emsp'>{{clansmanName}}</text>
+      </view>
+    </view>
+  </view>
+  <view class='setting'>
+    <navigator url='/pages/clansman/mod-self/mod-self' class='setting-item layout-justify-center'>
+      <text>我的基础信息</text>
+      <text decode>设置&gt;&gt;</text>
+    </navigator>
+    <navigator url='/pages/birthday/list' class='setting-item layout-justify-center'>
+      <text>最近生日</text>
+      <text decode>查看&gt;&gt;</text>
+    </navigator>
+
+    <navigator url='/pages/mine/help/help' class='setting-item'>帮助</navigator>
+    <navigator url='/pages/mine/about/about' class='setting-item'>关于</navigator>
+
+  </view>
+</scroll-view>

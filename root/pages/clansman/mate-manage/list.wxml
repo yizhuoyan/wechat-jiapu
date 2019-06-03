@@ -1,0 +1,30 @@
+<view class='layout-vbox page'>
+  <view class='fieldset-title pad'>
+    <text>{{name}}({{gender}})的配偶列表</text>
+  </view>
+  <scroll-view scroll-y class='grow'>
+    <view class='pad'>
+      <view wx:if="{{mates==null}}">
+        加载中...
+      </view>
+      <view wx:elif="{{mates.length==0}}">
+        <text>暂无配偶，请添加。</text>
+      </view>
+      <block wx:else>
+        <view catchtap='handleMateViewTap' data-id="{{item._id}}" wx:key="{{item._id}}" wx:for="{{mates}}" class='layout-row pad'>
+          <image class='avator-list' src="{{item.recentPhotoURL?item.recentPhotoURL:noPhotoURL}}"></image>
+          <view class='grow'>
+            <view>{{item.name}}</view>
+            <view>{{mateOrderArray[index]}}</view>
+          </view>
+
+          <button data-mateid='{{item._id}}' catchtap='handleDeleteBtnTap'>删除</button>
+
+        </view>
+      </block>
+    </view>
+  </scroll-view>
+  <view class='pad'>
+    <button class='block' catchtap='handleAddBtnTap'>添加配偶</button>
+  </view>
+</view>

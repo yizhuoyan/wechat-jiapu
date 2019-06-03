@@ -1,0 +1,23 @@
+<view>
+  <view class='h1'>
+    家族树说明
+  </view>
+
+  <view class='p'>
+    家族树，是指依据血缘关系把我们的亲人联系起来，再按照辈份排序构成的树型图形。如下:
+  </view>
+  <view>
+    <image style='width:100%;' mode='aspectFit' src="cloud://test-gj990.7465-test-gj990/images/clantree-simple.png"></image>
+  </view>
+  <view class='p'>
+    通过树形可以更清楚的知道自己的家族关系以及其他成员的基础信息，额外更清楚的知道您该怎么称呼对方哦。
+  </view>
+
+  <view class='p'>
+    亲戚称呼是指以自己为中心所确定的亲属成员，是建立在血亲姻亲基础上的亲属之间相互称呼的名称、叫法。它是以本人为轴心的确定亲属与本人关系的标志。汉族的亲戚关系条理例分明尊卑有序：比自己长一辈的称呼有姨父叔伯姑舅，同辈的有兄弟姐妹嫂等等，下一辈有侄甥等等。中国人由于姻亲而产生的亲戚关系相当庞杂。其派生出的各种称谓也是中华文化的一大特征。
+  </view>
+
+  <view class='pad'>
+    <button class='block' type='primary' catchtap='handleBackBtnTap'>好的，了解了。</button>
+  </view>
+</view>

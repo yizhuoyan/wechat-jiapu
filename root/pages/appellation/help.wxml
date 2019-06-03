@@ -1,0 +1,16 @@
+<view>
+  <view>
+    <view class='h1'>使用说明:</view>
+    <view class='gap'>
+      <view class='gap'>[←] 清除上一层关系</view>
+      <view class='gap'>[AC] 清除所有输入</view>
+      <view class='gap'>[互查] 对方称呼您</view>
+      <view class='gap'>[帮助] 显示此页面</view>
+    </view>
+  </view>
+
+  <view class='gap'>
+    <button type='primary' class='block' 
+    bindtap="handleBackBtnTap">返回</button>
+  </view>
+</view>

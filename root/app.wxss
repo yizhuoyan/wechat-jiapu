@@ -1,0 +1,224 @@
+page {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  height: 100vh;
+}
+
+scroll-view{
+  white-space:nowrap;
+}
+
+.b{
+  font-weight: bold;
+}
+label{
+  font-weight: bold;
+}
+.font-s{
+  font-size: 80%;
+}
+input{
+  display: inline-block;
+  vertical-align: middle;
+}
+scroll-view {
+  overflow: auto;
+}
+.h1{
+  margin-top: 1rem;
+  text-align: center;
+  padding: 15px;
+  background: #33ff33;
+  font-weight: bold;
+  font-size: 130%;
+}
+.p{
+  text-align: center;
+  text-indent: 2em;
+  padding: 15px 15px;
+}
+.big-avatar {
+  width: 400rpx;
+  height: 400rpx;
+  margin: 10rpx;
+}
+.small-avatar{
+  width:200rpx;
+  height:200rpx;
+  margin: 10rpx;
+}
+.avator-list{
+  width: 60px;
+  height: 60px;
+  margin-right: 15px;
+}
+.big-photo{
+  width: 400rpx;
+  height: 400rpx;
+  margin: 20rpx;
+}
+.pad {
+  padding: 30rpx;
+}
+
+.mg {
+  margin: 30rpx;
+}
+
+.mg-v{
+  margin-bottom: 30rpx;
+  margin-top: 30rpx;
+}
+
+
+
+
+.layout-hbox {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+.grow {
+  flex: auto;
+}
+
+.layout-vbox {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+.layout-row {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+.layout-column {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.layout-around {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.layout-around-stretch{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: stretch;
+}
+
+.layout-center-middle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.layout-justify-center {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.layout-hbox-justify {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: stretch;
+}
+button,.btn {
+  display: inline-block;
+  
+  padding:20px 15px;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+  line-height: 0;
+  border: 1px solid #ccc !important;
+  border-radius: 5px;
+  -webkit-tap-highlight-color: transparent;
+  overflow: hidden;
+  color: #000;
+  background-color: #f8f8f8;
+  opacity: 1;
+  outline: nonoe;
+}
+button.block{
+  display: block;
+  margin-top:10px;
+}
+button.mini,.btn.mini{
+   padding:20px 15px;
+}
+
+.page{
+  height: 100vh;
+  width: 100vw;
+}
+.fieldset-title{
+  padding: 30rpx 15rpx;
+  background-color: #33ffee;
+  color: #000;
+  font-weight: bold;
+}
+
+.form-row {
+  padding: 30rpx 15rpx;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  align-items: center;
+  border-bottom:1px solid #ccc; 
+}
+
+
+
+.page-header{
+  text-align: center;
+  padding: 50rpx 30rpx;
+
+}
+.action-box{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  padding: 50rpx 10rpx;
+}
+navigator{
+  text-decoration: underline;
+}
+
+.mate-order{
+  padding: 0 5px;
+}
+.mate-order::after{
+  content: ":";
+}
+.mate-name{
+  padding: 0 5px;
+}
+.child-order{
+  padding: 0 5px;
+}
+.child-order::after{
+  content: ":";
+}
+.child-name{
+  padding: 0 5px;
+}

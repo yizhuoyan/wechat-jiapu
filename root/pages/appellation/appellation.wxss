@@ -1,0 +1,60 @@
+page {
+  background-color: #333;
+}
+.input-show {
+  font-size: 90%;
+  padding: 5px;
+  color: #bbb;
+  min-height: 10vh;
+  overflow: hidden;
+}
+.disabled{
+  color: gray;
+  font-size: 80%;
+}
+
+.output-show {
+  font-size: 90%;
+  color: #e6e6e6;
+  background: #444;
+  padding: 5px;
+  min-height: 12vh;
+  overflow: hidden;
+}
+
+.options-view {
+  background: #2b2b2b;
+  color: #e6e6e6;
+  padding: 15px;
+  font-size: 80%;
+}
+
+
+.action-group {
+  background: #e5e5e5;
+  color: #fff;
+}
+.action-row{
+  display: flex;
+  flex-flow: row nowrap;
+}
+.action-btn {
+  box-sizing: border-box;
+  width: 25%;
+  text-align: center;
+  line-height: 15vh;
+  font-size: 40rpx;
+  color: #ebebeb;
+  border: solid 1px #444;
+  background-color: #333;
+}
+
+.orange {
+  color: #ebebeb;
+  background: #e7763e;
+}
+
+.highlight{
+  background-color: #f78d1d;
+  color:#fff;
+}

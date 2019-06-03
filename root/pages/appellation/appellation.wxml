@@ -1,0 +1,58 @@
+<view class='page layout-vbox'>
+  <view class='input-show grow'>
+    <textarea maxlength='-1' auto-height value='{{input}}' disabled='true' />
+  </view>
+ 
+  <view class='output-show '>
+     <view class=''>
+       {{reverse?"TA称呼我":"我称呼TA"}}:
+     </view>
+    <textarea auto-height value='{{result}}' disabled='true' style="text-align:right" />
+  </view>
+
+
+
+
+  <view class="action-group" bindtap='handleAppellationBtnTap'>
+    <view class="action-row">
+      <view class="action-btn" 
+      catchtap="handleHusbandBtnTap"
+      data-value='丈夫'
+      data-gender="1"
+      >夫</view>
+      <view class="action-btn"
+       catchtap="handleWifeBtnTap"
+       data-value='妻子'
+       data-gender="0"
+       >妻</view>
+      <view class="action-btn" catchtap='handleBackBtnTap'>←</view>
+      <view class="action-btn orange" catchtap='handleClearBtnTap'>C</view>
+    </view>
+
+    <view class="action-row">
+      <view class="action-btn" data-value='爸爸' data-gender="1">父</view>
+      <view class="action-btn" data-value='妈妈' data-gender="0">母</view>
+      <view class="action-btn" data-value='哥哥' data-gender="1">兄</view>
+      <view class="action-btn" data-value='弟弟' data-gender="1">弟</view>
+    </view>
+    <view class="action-row">
+      <view class="action-btn" data-value='姐姐' data-gender="0">姐</view>
+      <view class="action-btn" data-value='妹妹' data-gender="0">妹</view>
+      <view class="action-btn" data-value='儿子' data-gender="1">子</view>
+      <view class="action-btn" data-value='女儿' data-gender="0">女</view>
+    </view>
+    <view class="action-row">
+      <view class="action-btn" catchtap='handleHelpBtnTap'>帮助</view>
+      <view class="action-btn" catchtap='handleInverseBtnTap'>
+        互换    
+      </view>
+      <view class="action-btn" style='flex:auto'>
+        我是
+        <text class='{{firstGender?"":"disabled"}}'>男</text>
+        <switch catchtap="handleGenderSwitchChange" />
+        <text class='{{firstGender?"disabled":""}}'>女</text>
+
+      </view>
+    </view>
+  </view>
+</view>

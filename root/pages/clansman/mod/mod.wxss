@@ -1,0 +1,20 @@
+.vertical-btn{
+  width: 1rem;
+  height: auto;
+  
+  line-height: 1;
+  padding-left:15px ;
+  padding-right:15px ;
+  box-sizing: content-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.no-photo-view{
+  border: 1px dotted #333;
+  text-align: center;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

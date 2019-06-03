@@ -1,0 +1,8 @@
+<scroll-view  scroll-x scroll-y 
+style='width:100vw;height:100vh;text-align: center;'>
+  <clannode clansman="{{item}}" wx:for="{{roots}}" 
+  index="{{index}}" maxIndex="{{roots.length-1}}"
+  bootId="{{bootId}}"
+  wx:key="*this"></clannode>
+</scroll-view>
+

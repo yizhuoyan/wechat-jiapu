@@ -1,0 +1,19 @@
+<view>
+<view class="h1">需要您的授权</view>
+
+<view class='p'>
+    "我家亲戚多"需要获取您的如下信息为您服务，请点击
+    <text class="b">确认授权</text>按钮进行授权，谢谢。
+    <view>
+      <text>
+      1.您的微信头像
+      2.您的微信昵称
+      3.您的微信性别
+      </text>
+    </view>
+</view>
+
+  <view class='pad'>
+  <button class='block' open-type="getUserInfo" bindgetuserinfo='handleConfirmBtnTap'>确认授权</button> 
+  </view>
+</view>

@@ -1,0 +1,26 @@
+<view>
+  <view class='pad'>
+    <view class='layout-justify-center'>
+      <button wx:if="{{fatherId}}" catchtap='handleCheckFatherBtnTap'>查看父亲</button>
+      <button wx:else catchtap='handleAddFatherBtnTap'>添加父亲</button>
+      <button wx:if="{{motherId}}" catchtap='handleCheckMotherBtnTap'>查看母亲</button>
+      <button wx:else catchtap='handleAddMotherBtnTap'>添加母亲</button>
+    </view>
+
+    <view class='layout-around-stretch mg-v'>
+
+      <button class='vertical-btn' catchtap='handleMateManageBtnTap'>添加配偶</button>
+
+      <view class='grow layout-vbox pad'>
+        <image style='width:100%' class='grow' mode='aspectFit' src='{{recentPhotoURL?recentPhotoURL:noPhotoURL}}'></image>
+      </view>
+      <button class='vertical-btn' catchtap='handleModBaseBtnTap'>修改我的信息</button>
+    </view>
+    <view>
+      <button style='display:block' catchtap='handleChildrenManageBtnTap'>添加子女</button>
+    </view>
+  </view>
+  <view>
+    <button type='primary' catchtap='handleCheckClantreeBtnTap' class='block'>搞定，查看我的家谱树</button>
+  </view>
+</view>

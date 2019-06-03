@@ -1,0 +1,33 @@
+<view>
+  <view class='pad'>
+    <view class='layout-justify-center'>
+      <button wx:if="{{fatherId}}" catchtap='handleCheckFatherBtnTap'>查看父亲</button>
+      <button wx:else catchtap='handleAddFatherBtnTap'>添加父亲</button>
+      <button wx:if="{{motherId}}" catchtap='handleCheckMotherBtnTap'>查看母亲</button>
+      <button wx:else catchtap='handleAddMotherBtnTap'>添加母亲</button>
+    </view>
+
+    <view class='layout-around-stretch mg-v'>
+
+      <button class='vertical-btn' catchtap='handleMateManageBtnTap'>管理其配偶</button>
+
+      <view class='grow layout-vbox pad'>
+        <image style='width:100%' class='grow' mode='aspectFit' src='{{recentPhotoURL?recentPhotoURL:noPhotoURL}}'></image>
+        <button catchtap='handleCheckClantreeBtnTap'>查看其家族</button>
+      </view>
+      <view class='layout-vbox'>
+      <button wx:if="{{showDeleteBtn}}" type='warn' catchtap='handledeleteBtnTap' class='vertical-btn'>删除</button> 
+      <button class='vertical-btn grow' catchtap='handleModBaseBtnTap'>查看或修改其信息</button>
+       
+      </view>
+    </view>
+
+    <view>
+      <button style='display:block' catchtap='handleChildrenManageBtnTap'>管理其子女</button>
+    </view>
+  </view>
+  <view>
+   
+    <button type='primary' catchtap='handleBackBtnTap' class='block'>返回</button>
+  </view>
+</view>
