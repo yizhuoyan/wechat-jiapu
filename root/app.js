@@ -40,7 +40,11 @@ App({
       }
     })();
 
-
+    wx.showShareMenu({
+      withShareTicket: true,
+      menus: ["shareAppMessage"],
+  });
+ 
 
     
   },
